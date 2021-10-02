@@ -53,6 +53,7 @@ public class Main {
             
             Solution bestResult = algorithm.getBestSolution();
             
+            
             System.out.println("Best Result " + bestResult.getFitness() );
             System.out.println("Best Result Iter Num " + bestResult.getIterationNumber() );
             
