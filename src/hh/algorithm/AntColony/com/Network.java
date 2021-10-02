@@ -8,7 +8,6 @@
 package hh.algorithm.AntColony.com;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 /**
  *
@@ -28,7 +27,7 @@ public class Network {
         
         public Network(int numberOfNode)
         {
-            this.nodes = new ArrayList();
+            this.nodes = new ArrayList<>();
             
             for(int i = 0; i < numberOfNode; i++ )
             {
