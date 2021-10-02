@@ -1,7 +1,5 @@
 package hh.hyperheuristicalgorithm.test;
 
-import java.util.*;
-
 /** This is just a template of the <tt>MyGenerator</tt> class that
  * must be turned in.
  */

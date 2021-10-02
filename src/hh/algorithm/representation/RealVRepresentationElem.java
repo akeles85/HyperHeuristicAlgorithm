@@ -9,8 +9,6 @@ package hh.algorithm.representation;
 
 import hh.algorithm.com.RandomGenerator;
 import hh.algorithm.com.SystemFault;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
@@ -23,7 +21,7 @@ public class RealVRepresentationElem extends RepresentationElem{
     
     private double minBound;
     
-    private Double value = new Double(0);
+    private Double value = 0.0;
     
     
     public RealVRepresentationElem()
@@ -68,7 +66,7 @@ public class RealVRepresentationElem extends RepresentationElem{
 
     public void changeValue( RepresentationElem restrictedGenes[] ) throws SystemFault
     {
-        Double newValue = new Double(0);
+        Double newValue = 0.0;
         double restrictedValues[] = new double[restrictedGenes.length];
         
         for (int i = 0; i < restrictedValues.length; i++) {

@@ -7,13 +7,11 @@
 
 package hh.algorithm.representation;
 
-import hh.algorithm.com.ComparableObject;
-import hh.algorithm.com.Copyable;
+import java.util.Arrays;
+
 import hh.algorithm.com.RandomGenerator;
 import hh.algorithm.com.Representation;
-import hh.algorithm.on.com.LightPath;
 import hh.algorithm.on.com.LightPathRouterHeuristic;
-import java.util.Arrays;
 
 /**
  *

@@ -22,17 +22,10 @@ public class DimacsFileGenerator implements Generator {
   {
     BufferedReader in;
     String line;
-    Stack s = new Stack( );
+    Stack<Literal> s = new Stack<>( );
     Literal literal = new Literal( );
 
-    try
-    {
-      in = new BufferedReader(new FileReader("./inputs/aim-100-1_6-no-1.cnf"));
-    } catch (FileNotFoundException e)
-    {
-      System.err.print("File "+file_name+" not found.\n");
-      throw e;
-    }
+    in = new BufferedReader(new FileReader("./inputs/aim-100-1_6-no-1.cnf"));
 
     int i = 0;
 
@@ -44,6 +37,7 @@ public class DimacsFileGenerator implements Generator {
       } catch (IOException e)
       {
         System.err.println("Error reading file "+file_name);
+        in.close();
         throw e;
       }
 
@@ -80,7 +74,7 @@ public class DimacsFileGenerator implements Generator {
               k++;
             }
             i++;
-            s = new Stack( );
+            s = new Stack<Literal>( );
             break;
           }
           literal = new Literal( );
@@ -90,6 +84,7 @@ public class DimacsFileGenerator implements Generator {
         }
       }
     }
+    in.close();
   }
 
   /** Returns the CNF read in from the named DIMACS file. */

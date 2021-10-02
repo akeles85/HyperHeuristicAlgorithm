@@ -17,7 +17,7 @@ import hh.algorithm.com.SystemFault;
  */
 public class BinaryRepresentationElem extends RepresentationElem{
 
-    private Boolean value = new Boolean(false);
+    private Boolean value = false;
     
     public Boolean getValue() {
         return value;

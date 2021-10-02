@@ -1,7 +1,5 @@
 package hh.hyperheuristicalgorithm.test;
 
-import java.util.*;
-
 /** An object in this class acts as a timer, indicating both how much
  * time has elapsed from the time the object was created, as well as
  * how much time remains until the end of a specified period.
