@@ -13,8 +13,6 @@ import hh.algorithm.com.Representation;
 import hh.algorithm.com.Solution;
 import hh.algorithm.com.SystemFault;
 import hh.algorithm.representation.ArrayRepresentation;
-import hh.algorithm.representation.ArrayRepresentation;
-import hh.algorithm.representation.ArrayRepresentation;
 
 /**
  *
