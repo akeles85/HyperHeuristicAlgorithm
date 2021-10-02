@@ -238,14 +238,14 @@ public class AntColonyBasedHHRWA extends HHRWA implements FitnessHandler, Fitnes
         try{
             if( args[paramBaseIndex+0].toLowerCase().compareTo("nsfnet") == 0 )
             {
-                VTDesignParams.distanceFileName = "c:\\topolojiler\\nsfnet\\PhysicalTopologies\\pt.txt";    
-                VTDesignParams.traficFileName = "c:\\topolojiler\\nsfnet\\VirtualTopologies\\nsfnet";      
+                VTDesignParams.distanceFileName = ".\\inputs\\topology\\nsfnet\\PhysicalTopologies\\pt.txt";    
+                VTDesignParams.traficFileName = ".\\inputs\\topology\\nsfnet\\VirtualTopologies\\nsfnet";      
                 AntColonyBasedHHRWAParams.topologyName = "result_nsfnet";
             }
             else if( args[0].toLowerCase().compareTo("att" ) == 0 )
             {
-                VTDesignParams.distanceFileName = "c:\\topolojiler\\att\\PhysicalTopologies\\pt.txt";    
-                VTDesignParams.traficFileName = "c:\\topolojiler\\att\\VirtualTopologies\\att";                
+                VTDesignParams.distanceFileName = ".\\inputs\\topology\\att\\PhysicalTopologies\\pt.txt";    
+                VTDesignParams.traficFileName = ".\\inputs\\topology\\att\\VirtualTopologies\\att";                
                 AntColonyBasedHHRWAParams.topologyName = "result_att";
             }
             else

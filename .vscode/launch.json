@@ -4,13 +4,15 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+ 
         {
-            "stopOnEntry": true,
             "type": "java",
-            "name": "Launch Main",
+            "name": "Launch AntColonyBasedHHRWA",
             "request": "launch",
-            "mainClass": "hh.hyperheuristicalgorithm.Main",
-            "projectName": "HyperHeuristicAlgorithm_1fd23937"
+            "mainClass": "hh.algorithm.on.iterativeHH.AntColonyBasedHHRWA",
+            "projectName": "HyperHeuristicAlgorithm_1fd23937",
+            "args": "nsfnet 3 1 0.0 2 0.1 alfa",
+            "stopOnEntry": true
         }
     ]
 }
