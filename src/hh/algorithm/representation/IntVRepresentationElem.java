@@ -7,11 +7,10 @@
 
 package hh.algorithm.representation;
 
+import java.util.Arrays;
+
 import hh.algorithm.com.RandomGenerator;
 import hh.algorithm.com.SystemFault;
-import java.util.Arrays;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
@@ -26,7 +25,7 @@ public class IntVRepresentationElem extends RepresentationElem{
     
     private static final int degreeOfRelation = 1;
     
-    private Integer value = new Integer(0);
+    private Integer value = 0;
     
     
     public IntVRepresentationElem()
@@ -93,7 +92,7 @@ public class IntVRepresentationElem extends RepresentationElem{
     
     public void changeValue( RepresentationElem restrictedGenes[] ) throws SystemFault
     {
-        int newValue = new Integer(0);
+        int newValue = 0;
         int restrictedValues[] = new int[restrictedGenes.length];
         int numOfRestricted[] = new int[degreeOfRelation];
         
