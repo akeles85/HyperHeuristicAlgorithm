@@ -7,8 +7,12 @@
 
 package hh.algorithm.AntColony.com;
 
+<<<<<<< HEAD
 import hh.algorithm.HyperHeuristicParams;
 import hh.algorithm.on.com.VTDesignParams;
+=======
+import hh.hyperheuristicalgorithm.HyperHeuristicParams;
+>>>>>>> f1c6de297a2fe2c301a35dbd2bb2c3be44ca2aee
 
 /**
  *

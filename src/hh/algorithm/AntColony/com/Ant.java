@@ -21,7 +21,7 @@ public class Ant {
     
     /** Creates a new instance of Ant */
     public Ant() {
-        path = new ArrayList();        
+        path = new ArrayList<>();        
     }
     
     public void addPath(Node inNode)
@@ -32,7 +32,7 @@ public class Ant {
     public void setInitialPosition( Node inNode )
     {
         setCurrentNode(inNode);
-        this.path = new ArrayList();
+        this.path = new ArrayList<>();
         this.path.add( inNode );                
     }
     

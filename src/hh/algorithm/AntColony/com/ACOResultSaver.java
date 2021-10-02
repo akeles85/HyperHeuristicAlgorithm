@@ -55,11 +55,11 @@ public class ACOResultSaver
     }
     
     
-    public void saveToFile(String problemName) throws IOException
+    public void saveToFile(String problemName) throws IOException, NullPointerException
     {        
         if( true )
             return;
-        File theDir = new File( "c:\\"+ AntColonyBasedHHRWAParams.topologyName );
+        File theDir = new File( "./output/"+ AntColonyBasedHHRWAParams.topologyName );
         if( !theDir.exists() )
             theDir.mkdir();
         
@@ -137,7 +137,7 @@ public static void readFromDirectory(String inDir, String pureParam, String para
         System.out.println("ParamName: " + paramName );
         File[] files = dir.listFiles();
         
-        ArrayList<File> validFiles = new ArrayList();
+        ArrayList<File> validFiles = new ArrayList<>();
         
         for(int i = 0; i < files.length; i++ )
         {
@@ -168,13 +168,13 @@ public static void readFromDirectory(String inDir, String pureParam, String para
             double currBestFitness = Double.valueOf( line.split(":")[1].trim() );
             
             line = reader.readLine();
-            boolean isFeasible = Boolean.valueOf( line.split(":")[1].trim()  );
+            Boolean.valueOf( line.split(":")[1].trim()  );
             
             line = reader.readLine();
-            int bestIterFoundAt = Integer.valueOf( line.split(":")[1].trim() );
+            Integer.valueOf( line.split(":")[1].trim() );
             
             line = reader.readLine();
-            double runningTime = Double.valueOf( line.split(":")[1].trim() );            
+            Double.valueOf( line.split(":")[1].trim() );            
             
             reader.readLine();
             

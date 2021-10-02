@@ -46,7 +46,7 @@ public class ACO extends ProblemSolver{
     {
         this.network = new Network( ACOParams.NUMBER_OF_NODE );       
         
-        this.ants = new ArrayList();
+        this.ants = new ArrayList<Ant>();
         
         for( int i = 0 ; i < ACOParams.NUMBER_OF_ANTS; i++ )
         {
@@ -123,7 +123,6 @@ public class ACO extends ProblemSolver{
                 neighbourhoodSumation += getTaoValue( currentAnt.getCurrentNode(), node );
             }
 
-            boolean selectionDecided = false;            
             iter = neighbours.iterator();
             while( iter.hasNext() )
             {
@@ -169,8 +168,6 @@ public class ACO extends ProblemSolver{
     
     public void globalUpdate( ArrayList<Node> path , double fitness )
     {
-        double oldPhenome;
-        double newPhenome = 0;
         double increment;
         
                 
@@ -368,7 +365,6 @@ public class ACO extends ProblemSolver{
             /*Each ant complete their moves*/            
             ArrayList<Node> bestPath = null;            
             Solution bestSolution = null;
-            double currentFitness;
             for( int i = 0; i < this.ants.size(); i++)
             {
                 ArrayList<Node> pathOfCurrentAnt = this.ants.get(i).getPath();
@@ -383,7 +379,7 @@ public class ACO extends ProblemSolver{
                 if( this.fitnessComparator.isBetter(currentSolution, bestSolution) )
                 {                                                     
                     bestSolution = currentSolution.clone();
-                    bestPath = new ArrayList();
+                    bestPath = new ArrayList<>();
                     for( int j = 0; j < pathOfCurrentAnt.size(); j++ )
                     {
                         bestPath.add( pathOfCurrentAnt.get(j) );
@@ -392,7 +388,7 @@ public class ACO extends ProblemSolver{
                 
                 if( this.fitnessComparator.isBetter(currentSolution, globalBestSolution) )
                 {                    
-                    globalBestPath = new ArrayList();
+                    globalBestPath = new ArrayList<>();
                     for( int j = 0; j < pathOfCurrentAnt.size(); j++ )
                     {
                         globalBestPath.add( pathOfCurrentAnt.get(j) );
