@@ -13,7 +13,6 @@ import hh.algorithm.com.Matrix;
 import hh.algorithm.com.ProblemSolver;
 import hh.algorithm.com.RandomGenerator;
 import hh.algorithm.com.Representation;
-import hh.algorithm.com.SATSolution;
 import hh.algorithm.com.Solution;
 import hh.algorithm.com.StatisticCalculator;
 import hh.algorithm.com.SystemFault;

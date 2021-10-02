@@ -5,7 +5,7 @@
 */
 
 
-package hh.hyperheuristicalgorithm;
+package hh.algorithm;
 
 /**
  *
